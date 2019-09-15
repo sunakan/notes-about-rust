@@ -1,5 +1,5 @@
 [package]
-name = "ABC081B-Shiftonly"
+name = "abc081b-shiftonly"
 version = "0.1.0"
 authors = ["sunakan"]
 edition = "2018"
