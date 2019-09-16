@@ -1,0 +1,6 @@
+[package]
+name = "abc083b_somesums"
+version = "0.1.0"
+authors = ["sunakan <sunakan03@gmail.com>"]
+
+[dependencies]
