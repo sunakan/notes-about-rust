@@ -1,0 +1,6 @@
+[package]
+name = "ABC088B-CardGameforTwo"
+version = "0.1.0"
+authors = ["sunakan <sunakan03@gmail.com>"]
+
+[dependencies]
