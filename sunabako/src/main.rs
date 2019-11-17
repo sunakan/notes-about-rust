@@ -32,4 +32,21 @@ mod tests {
         let b = 3;
         assert!(a == b, "required {} == {}", a, b);
     }
+
+    // ヒアドキュメントはr#"hello"#
+    // r#" と "#で囲む
+    #[test]
+    fn test_here_doc() {
+        let s1 = r#"Hello"#;
+        let s2 = r#"{"x":1,"y":2}"#;
+        let s3 = r#"
+        {
+          "name":"太郎",
+          "age":20
+        }"#;
+        assert_eq!(s1, "Hello");
+        assert_eq!(s2, "{\"x\":1,\"y\":2}");
+        assert_eq!(s3, "\n        {\n          \"name\":\"太郎\",\n          \"age\":20\n        }");
+    }
+
 }
