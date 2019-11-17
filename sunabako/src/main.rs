@@ -1,5 +1,15 @@
+extern crate serde;
+extern crate serde_json;
+use std::collections::BTreeMap;
+
 fn main() {
     println!("{}", hello());
+    let s = r#"{"x":1,"y":2}"#;
+    let deserialized_map: BTreeMap<String, f64> = serde_json::from_str(s).unwrap();
+    println!("{:?}", deserialized_map);
+    // => {"x": 1, "y": 2}
+    println!("{:?}", deserialized_map.get("x").unwrap());
+    // => 1
 }
 
 fn hello() -> String {
